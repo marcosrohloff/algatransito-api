@@ -25,7 +25,9 @@ public class VeiculoAssembler {
     }
 
     public List<VeiculoModel> toCollectionModel(List<Veiculo> veiculos) {
-        return veiculos.stream().map(this::toModel).toList();
+        return veiculos.stream()
+                .map(this::toModel)
+                .toList();
     }
 
 }

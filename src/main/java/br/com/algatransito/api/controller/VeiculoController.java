@@ -56,6 +56,7 @@ public class VeiculoController {
         return veiculoAssembler.toModel(veiculoCadastrado);
     }
 
+
     @PutMapping("/{veiculoId}/apreensao")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void apreender(@PathVariable Long veiculoId) {
